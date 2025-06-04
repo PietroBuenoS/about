@@ -1,10 +1,10 @@
 <?php 
 
-if($_POST['nome'] == 'admim' && $_POST['password'] == 'senha'){
+if($_POST['nome'] == 'pietro' && $_POST['password'] == 'xana'){
    session_start();
    $_SESSION['login'] = $_POST['nome'];
 }else{
-    echo "<script>alert('prioca')</script>";
+   header('location: pietrologin.php?return = deu piroca!!!');
 }
 
 ?>
@@ -33,8 +33,9 @@ if($_POST['nome'] == 'admim' && $_POST['password'] == 'senha'){
                 <button class="btn btn-outline-info btn-block mt-4 mb-4">Acessar</button>
 
             </div>
-        </div>
+        </div>        
     </div>
+    
 </div>
 
 

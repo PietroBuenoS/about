@@ -31,7 +31,7 @@
                     <input type="password" name="senha" class="form-control" id="senha"></input>
 
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6"> 
-                    <button type="submit" class="btn btn-outline-primary"></button>
+                    <button type="submit" class="btn btn-outline-primary">enter</button>
                     </div>
                     <br>
                         
@@ -45,6 +45,21 @@
             </div>
            
         </div>         
+    </div>
+    <div class="row jistify-content-end fixed-bottom">
+        <div class="col-12 col-sm-6 col-md-4 ml-2 mr-2">
+            <?php 
+              if(isset($_GET['return'])){
+                echo '
+                <div class="alert alert-warning p-3">
+                      <h4 class="text-center">
+                      '.$_GET['return'].'
+                      </h4>
+                </div>
+                ';
+              }
+            ?>
+        </div>
     </div>
 </div>
 
